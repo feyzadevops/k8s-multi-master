@@ -53,4 +53,9 @@ This setup has been tested on Ubuntu 20.04, Ubuntu 22.04, and Ubuntu 24.04. Befo
 
 ## Kubernetes Installation
 
+Files are downloaded to the same directory. The `initialize_all_nodes.sh` script should be made executable and then run on all master and worker nodes where Kubernetes will be installed.
+```bash
+chmod +x initialize_all_nodes.sh
+./initialize_all_nodes.sh
+```
 
