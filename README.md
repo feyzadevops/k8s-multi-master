@@ -39,7 +39,7 @@ This setup has been tested on Ubuntu 20.04, Ubuntu 22.04, and Ubuntu 24.04. Befo
    Edit the /etc/systemd/journald.conf file:
    ```bash
    sudo nano /etc/systemd/journald.conf
-   
+   ```
    Add or modify the following lines:
    ```bash
    Storage=persistent
