@@ -1,5 +1,5 @@
 K8S_VERSION=v1.29
-CALICO_VERSION="v3.28.0"
+CALICO_VERSION=v3.28.0
 
 swapoff -a
 sed -i.bak '/swap.img/s/^/#/' /etc/fstab
