@@ -59,3 +59,15 @@ chmod +x initialize_all_nodes.sh
 ./initialize_all_nodes.sh
 ```
 
+Next, we run the `setup-master-nodes.sh` script on the nodes that we will configure as master nodes.
+```bash
+chmod +x setup-master-nodes.sh
+./setup-master-nodes.sh
+```
+
+We also run the `setup-worker-nodes.sh` script on the nodes that we will configure as worker nodes.
+```bash
+chmod +x setup-worker-nodes.sh
+./setup-worker-nodes.sh
+```
+
