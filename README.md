@@ -24,6 +24,23 @@ Edit the /etc/security/limits.conf file:
    sudo nano /etc/security/limits.conf
 Add the following lines:
    ```bash
-   * soft nofile 65536
-   * hard nofile 65536
+    * soft nofile 65536
+    * hard nofile 65536
    
+5. **Check the Updated Limit:**
+   ```bash
+   ulimit -n
+
+6. **Configure System Journal:**
+Edit the /etc/systemd/journald.conf file:
+   ```bash
+   sudo nano /etc/systemd/journald.conf
+Add or modify the following lines:
+   ```bash
+   Storage=persistent
+   SystemMaxUse=10G
+   RuntimeMaxUse=10G
+
+6. **Restart System Journal Service::**
+   ```bash
+   sudo systemctl restart systemd-journald
