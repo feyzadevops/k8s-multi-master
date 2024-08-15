@@ -18,3 +18,12 @@ This setup has been tested on Ubuntu 20.04, Ubuntu 22.04, and Ubuntu 24.04. Befo
    sudo systemctl status ufw
    sudo systemctl stop ufw
    
+4. **Configure Security Limits:**
+Edit the /etc/security/limits.conf file:
+   ```bash
+   sudo nano /etc/security/limits.conf
+Add the following lines:
+   ```bash
+   * soft nofile 65536
+   * hard nofile 65536
+   
