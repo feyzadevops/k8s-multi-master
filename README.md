@@ -49,4 +49,4 @@ This setup has been tested on Ubuntu 20.04, Ubuntu 22.04, and Ubuntu 24.04. Befo
 7. **Restart System Journal Service::**
    ```bash
    sudo systemctl restart systemd-journald
-    
+   ```
