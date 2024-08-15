@@ -8,3 +8,13 @@ This setup has been tested on Ubuntu 20.04, Ubuntu 22.04, and Ubuntu 24.04. Befo
    ```bash
    sudo apt-get update
    sudo apt-get upgrade -y
+
+2. **Set the Timezone:**
+    ```bash
+    sudo timedatectl set-timezone ???/???
+
+3. **Disable Uncomplicated Firewall (UFW):**
+   ```bash
+   sudo systemctl status ufw
+   sudo systemctl stop ufw
+   
