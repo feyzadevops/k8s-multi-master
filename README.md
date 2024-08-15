@@ -35,15 +35,18 @@ This setup has been tested on Ubuntu 20.04, Ubuntu 22.04, and Ubuntu 24.04. Befo
    ulimit -n
 
 6. **Configure System Journal:**
-Edit the /etc/systemd/journald.conf file:
+
+   Edit the /etc/systemd/journald.conf file:
    ```bash
    sudo nano /etc/systemd/journald.conf
-Add or modify the following lines:
+   
+   Add or modify the following lines:
    ```bash
    Storage=persistent
    SystemMaxUse=10G
    RuntimeMaxUse=10G
-
-6. **Restart System Journal Service::**
+   ```
+7. **Restart System Journal Service::**
    ```bash
    sudo systemctl restart systemd-journald
+    
