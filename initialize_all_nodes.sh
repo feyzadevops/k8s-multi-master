@@ -29,6 +29,10 @@ echo "sudo kubeadm init --control-plane-endpoint "vip-k8s:6443" --upload-certs -
 
 kubeadm init --control-plane-endpoint "vip-k8s:6443" --upload-certs --cri-socket /run/containerd/containerd.sock --pod-network-cidr=10.10.0.0/16
 
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
 echo "INFO: Configuring kubectl and Calico $CALICO_VERSION"
 curl https://raw.githubusercontent.com/projectcalico/calico/$CALICO_VERSION/manifests/tigera-operator.yaml -O && kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/$CALICO_VERSION/manifests/tigera-operator.yaml
 
