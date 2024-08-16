@@ -5,13 +5,13 @@ CALICO_VERSION="v3.28.0"    # check latest release version on this link => https
 POD_NETWORK_CIDR="10.10.0.0/16"
 HOSTNAME="k8s-master-1"
 ## KEEPALIVED CONFIG FILE VARIABLES
-export KEEPALIVED_VIP=10.80.20.11
+export KEEPALIVED_VIP=x.x.x.x           #keepalived ip
 export KEEPALIVED_DEST_PORT=6443
 export KEEPALIVED_STATE=MASTER          # MASTER | BACKUP
 export KEEPALIVED_PIORITY=100           # Less than 100 others
 export KEEPALIVED_PEERS=""
-export KEEPALIVED_SRC_IP=10.80.18.2             #LOCAL IP
-export NETWORK_INTERFACE=ens18
+export KEEPALIVED_SRC_IP=x.x.x.x             #LOCAL IP
+export NETWORK_INTERFACE=ens18               #interface
 
 convert_hosts () {
     # Belirtilen dosyayı oku
