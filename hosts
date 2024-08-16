@@ -1,7 +1,8 @@
 # Add the IP addresses and hostnames of your master and worker nodes to the hosts file.
 127.0.0.1   localhost
-192.168.1.10 k8s-master-1
-192.168.1.11 k8s-master-2
-192.168.1.12 k8s-master-3
-192.168.1.13 k8s-worker-1
-192.168.1.14 k8s-worker-2
+keepalived_ip vip-k8s
+192.168.1.10  k8s-master-1
+192.168.1.11  k8s-master-2
+192.168.1.12  k8s-master-3
+192.168.1.13  k8s-worker-1
+192.168.1.14  k8s-worker-2
