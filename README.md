@@ -53,7 +53,7 @@ This setup has been tested on Ubuntu 20.04, Ubuntu 22.04, and Ubuntu 24.04. Befo
 
 ## Kubernetes Installation
 
-Files are downloaded to the same directory. In the setup-master-nodes.sh file, KEEPALIVED_VIP, KEEPALIVED_SRC_IP and NETWORK_INTERFACE are set according to their own server. After setting, the setup-master-nodes.sh script is run on the master nodes.
+Files are downloaded to the same directory and edit the hosts file. In the setup-master-nodes.sh file, KEEPALIVED_VIP, KEEPALIVED_SRC_IP and NETWORK_INTERFACE are set according to their own server. After setting, the setup-master-nodes.sh script is run on the master nodes.
 ```bash
 chmod +x setup-master-nodes.sh
 ./setup-master-nodes.sh
