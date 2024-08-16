@@ -53,19 +53,19 @@ This setup has been tested on Ubuntu 20.04, Ubuntu 22.04, and Ubuntu 24.04. Befo
 
 ## Kubernetes Installation
 
-Files are downloaded to the same directory. The `initialize_all_nodes.sh` script should be made executable and then run on all master and worker nodes where Kubernetes will be installed.
-```bash
-chmod +x initialize_all_nodes.sh
-./initialize_all_nodes.sh
-```
-
-Next, we run the `setup-master-nodes.sh` script on the nodes that we will configure as master nodes.
+Files are downloaded to the same directory. In the setup-master-nodes.sh file, KEEPALIVED_VIP, KEEPALIVED_SRC_IP and NETWORK_INTERFACE are set according to their own server. After setting, the setup-master-nodes.sh script is run on the master nodes.
 ```bash
 chmod +x setup-master-nodes.sh
 ./setup-master-nodes.sh
 ```
 
-We also run the `setup-worker-nodes.sh` script on the nodes that we will configure as worker nodes.
+The initialize_all_nodes.sh script is run on the master nodes.
+```bash
+chmod +x initialize_all_nodes.sh
+./initialize_all_nodes.sh
+```
+
+To prepare worker nodes, the setup-worker-nodes.sh script is run on the worker nodes.
 ```bash
 chmod +x setup-worker-nodes.sh
 ./setup-worker-nodes.sh
