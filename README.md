@@ -1,5 +1,7 @@
 # soroban-k8s-infrastructure
 
+This Kubernetes infrastructure is specifically designed to support the deployment and management of tools and services for the Soroban smart contract platform on the Stellar network. By utilizing a multi-master Kubernetes setup, this infrastructure provides high availability and scalability for Soroban-related services such as AWX for Ansible automation, FreeIPA for user authentication, pfSense with Suricata and Snort for network security, and Grafana, Prometheus, Elasticsearch, and Kibana for monitoring and logging. This setup aims to provide a robust environment for developing, testing, and deploying smart contracts on Soroban with enhanced security and operational efficiency.
+
 This setup has been tested on Ubuntu 20.04, Ubuntu 22.04, and Ubuntu 24.04. Before proceeding with the Kubernetes multi-master node installation, please ensure that your system is up-to-date and properly configured by executing the following commands:
 
 ## Preparing the Ubuntu Operating System
